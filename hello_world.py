@@ -1,4 +1,3 @@
-#coding:utf-8
 print ("hello world")
 #首字母大写，去掉前后空格
 message = " Harry poter "
