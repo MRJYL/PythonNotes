@@ -1,3 +1,4 @@
+pandding = '\n'
 print ("hello world")
 #首字母大写，去掉前后空格
 message = " Harry poter "
@@ -15,3 +16,7 @@ print(message)
 print (3/2)
 print (3 + 4 * 5)
 print((3 + 4) * 5)
+
+def helloWorld():
+    print('hello world')
+helloWorld()

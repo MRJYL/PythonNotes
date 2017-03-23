@@ -59,9 +59,32 @@ favorite_languages = {
 
 for name, languages in favorite_languages.items():
     if  len(languages) == 1:
-        print( "\n" + name.title( ) + "'s favorite languages are:" + languages[-1].title() )
+        print( "\n" + name.title() + "'s favorite languages are:" + languages[-1].title() )
     else:
         print("\n" + name.title() + "'s favorite languages are:")
         for language in languages:
-            print( "\t" + language.title( ) )
-            
+            print( "\t" + language.title())
+
+# 嵌套
+users = {
+    'aeinstein': {
+        'first': 'albert',
+        'last': 'einstein',
+        'location': 'princeton'
+    },
+    'mcurie': {
+        "first": 'marie',
+        'last': 'curie',
+        'location': 'paris'
+    }
+}
+
+for userName, userInfo in users.items():
+    print('\nUserName: ' + userName)
+    fullName = userInfo['first'] + userInfo['last']
+    location = userInfo['location']
+
+    print('\tFull name : ' + fullName.title())
+    print('\nLocation: ' + location.title())
+
+de
